@@ -1,22 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libftprintf.h                                      :+:      :+:    :+:   */
+/*   ft_printfs.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kfaustin <kfaustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/01 16:52:59 by kfaustin          #+#    #+#             */
-/*   Updated: 2022/12/01 16:53:02 by kfaustin         ###   ########.fr       */
+/*   Created: 2022/12/01 16:51:55 by kfaustin          #+#    #+#             */
+/*   Updated: 2022/12/01 16:54:05 by kfaustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFTPRINTF_H
-# define LIBFTPRINTF_H
+#include "libftprintf.h"
 
-# include <stdarg.h>
-# include <unistd.h>
-# include <stdlib.h>
+void ft_printfs(char *str)
+{
+	int i;
 
-
-
-#endif
+	i = 0;
+	while (str && *(str + i))
+	{
+		write(1, (str + i), 1);
+		i++;
+	}
+}
