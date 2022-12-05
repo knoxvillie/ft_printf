@@ -6,20 +6,25 @@
 /*   By: kfaustin <kfaustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 16:51:55 by kfaustin          #+#    #+#             */
-/*   Updated: 2022/12/01 16:54:05 by kfaustin         ###   ########.fr       */
+/*   Updated: 2022/12/05 15:30:51 by kfaustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
-void ft_printfs(char *str)
+int	ft_printfs(char *str)
 {
-	int i;
+	int	i;
+	int	count;
 
+	count = 0;
 	i = 0;
-	while (str && *(str + i))
+	if (!str)
+		return (ft_printfs("(null)"));
+	while (*(str + i))
 	{
-		write(1, (str + i), 1);
-		i++;
+		ft_printfc(*(str + i++));
+		count++;
 	}
+	return (count);
 }

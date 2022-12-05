@@ -1,28 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printfu.c                                       :+:      :+:    :+:   */
+/*   ft_checkspecifier.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kfaustin <kfaustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/01 17:00:27 by kfaustin          #+#    #+#             */
-/*   Updated: 2022/12/05 14:18:39 by kfaustin         ###   ########.fr       */
+/*   Created: 2022/12/05 11:19:56 by kfaustin          #+#    #+#             */
+/*   Updated: 2022/12/05 14:22:13 by kfaustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_printfu(unsigned int number)
+char	ft_checkspecifier(char xar)
 {
-	int	count;
+	char	*specifier;
+	int		i;
 
-	count = 0;
-	if (number < 10)
-		count += ft_printfc(number + '0');
-	else
+	i = 0;
+	specifier = "cspdiuxX%";
+	while (*(specifier + i))
 	{
-		count += ft_printfd(number / 10);
-		count += ft_printfd(number % 10);
+		if (xar == *(specifier + i))
+			return (*(specifier + i));
+		i++;
 	}
-	return (count);
+	return (0);
 }

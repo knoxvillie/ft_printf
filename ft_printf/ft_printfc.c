@@ -6,13 +6,14 @@
 /*   By: kfaustin <kfaustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 16:50:35 by kfaustin          #+#    #+#             */
-/*   Updated: 2022/12/01 16:51:46 by kfaustin         ###   ########.fr       */
+/*   Updated: 2022/12/05 14:18:28 by kfaustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
-void ft_printfc(char c)
+int	ft_printfc(char c)
 {
 	write(1, &c, 1);
+	return (1);
 }

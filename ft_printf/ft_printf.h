@@ -1,28 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printfu.c                                       :+:      :+:    :+:   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kfaustin <kfaustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/01 17:00:27 by kfaustin          #+#    #+#             */
-/*   Updated: 2022/12/05 14:18:39 by kfaustin         ###   ########.fr       */
+/*   Created: 2022/12/01 16:52:59 by kfaustin          #+#    #+#             */
+/*   Updated: 2022/12/05 15:32:06 by kfaustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
 
-int	ft_printfu(unsigned int number)
-{
-	int	count;
+# include <stdarg.h>
+# include <unistd.h>
+# include <stdlib.h>
 
-	count = 0;
-	if (number < 10)
-		count += ft_printfc(number + '0');
-	else
-	{
-		count += ft_printfd(number / 10);
-		count += ft_printfd(number % 10);
-	}
-	return (count);
-}
+int		ft_printf(const char *str, ...);
+int		ft_printfd(long number);
+int		ft_printfx(unsigned long number, char c);
+int		ft_printfc(char c);
+int		ft_printfs(char *str);
+int		ft_printfu(unsigned int number);
+int		ft_printfp(unsigned long number);
+char	ft_checkspecifier(char xar);
+
+#endif
