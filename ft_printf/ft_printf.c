@@ -6,7 +6,7 @@
 /*   By: kfaustin <kfaustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 14:48:09 by kfaustin          #+#    #+#             */
-/*   Updated: 2022/12/05 16:35:19 by kfaustin         ###   ########.fr       */
+/*   Updated: 2022/12/06 10:57:38 by kfaustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,5 +59,6 @@ int	ft_printf(const char *str, ...)
 		}
 		i++;
 	}
+	va_end(var);
 	return (count);
 }
