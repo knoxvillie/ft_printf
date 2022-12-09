@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kfaustin <kfaustin@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kfaustin <kfaustin@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/30 10:16:07 by kfaustin          #+#    #+#             */
-/*   Updated: 2022/12/01 14:23:51 by kfaustin         ###   ########.fr       */
+/*   Updated: 2022/12/09 10:59:17 by kfaustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -199,7 +199,7 @@ int ft_printf(const char *str, ...)
 		}
 		else if (*(str + i) == '%' && !(ft_checkspecifier(*(str + i + 1))))
 		{
-			write(1, "ANIMAL", 6);
+			write(1, "ERROR", 6);
 			return (0);
 		}
 		else
