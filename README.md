@@ -3,7 +3,7 @@
 <div align="center">
   <!-- Logo -->
   <a href="https://github.com/knoxvillie/ft_printf">
-  <img src="images/logo.jpg" alt="Logo" width="150" height="150">
+  <img src="images/logo.png" alt="Logo" width="150" height="150">
   </a>
 
   <!-- Project Name -->
