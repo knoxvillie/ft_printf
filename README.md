@@ -2,8 +2,8 @@
 
 <div align="center">
   <!-- Logo -->
-  <a href="https://github.com/knoxvillie/libft">
-  <img src="images/gif.gif" alt="Logo" width="100" height="100">
+  <a href="https://github.com/knoxvillie/ft_printf">
+  <img src="images/logo.jpg" alt="Logo" width="150" height="150">
   </a>
 
   <!-- Project Name -->
