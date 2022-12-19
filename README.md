@@ -83,19 +83,14 @@ Don't forget to give the project a star! Thanks again!
 
 <h2 align="center">:wrench: Running Tests</h2>
 <h4 align="center">
+<span> · </span>
   <a href="https://github.com/xicodomingues/francinette" target="_blank">:paperclip: Francinette</a>
 <span> · </span>
-  <a href="https://github.com/Tripouille/gnlTester" target="_blank">:paperclip: gnlTester</a>
 <br/>
 <br/>
 </h4>
 <h3 align="center">:camera: Screenshots</h3>
 <p align="center">
-  <img src="images/pic1.png" alt="Libft-Unit-Test" width="300" height="350"/>
-  <img src="images/pic3.png" alt="Libft-Unit-Test" width="300" height="350"/>
+  <img src="images/pic1.png" alt="Libft-Unit-Test" width="400" height="600"/>
   </p>
-<p align="center">
-  <img src="images/pic2.png" alt="Libft-Unit-Test" width="300" height="350"/>
-  <img src="images/pic4.png" alt="Libft-Unit-Test" width="300" height="350"/>
-</p>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
