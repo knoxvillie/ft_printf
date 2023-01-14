@@ -40,8 +40,7 @@
 
   <h2>:star2: About The Project</h2>
   <p>
-   The goal of the project is to create a script that receives a file descriptor and reads a predefined amount of bytes <em>BUFFER_SIZE</me>, until the end of a line is reached. When the number of bytes in the line is not a multiple of <em>BUFFER_SIZE</me>, the read function will read bytes that do not belong to the line in question, but to the next line. As a result, this project reads and returns one line at a time from a file descriptor, whenever the get_next_line function is executed.
-  The bonus part handles multiple text files simultaneously.
+   The main goal of the project is to recreate the C standard library printf function, understanding about variadic functions being the academic goal. The function ft_printf should be able to take an indefinite number of parameters, the first of which is always a string. The flags that the function must handle are cspdiuxX%. It is not necessary to implement the buffer management of the original printf().
   </p>
 </div>
 
